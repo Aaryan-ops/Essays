@@ -1,0 +1,10 @@
+Using java and python.
+
+Sending textual output to the screen. System object.out method of System.out subclass field. println() method of System.out class. The argument passed in with appropriate punctuation will be the displayed onto screen after required computations. 
+
+Palindrom check using js.
+-----------------------
+var l2r="racecar"; var r2;=""; var palindrome_processor=[] ; for(var i=0;i<l2r.length;i++){palindrome_processor.push(l2r[i]);}
+
+-------------------------
+I declare variable/storage with var keyword. The variable can be an array too. The array has push() method that takes in an itemto be pushed as an argument. The array has pop() method that takes in an index as an argument and removes it from the array, returning the item at that index. A character in a string can be accessed by indexing.
