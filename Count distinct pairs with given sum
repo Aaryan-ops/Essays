@@ -1,0 +1,20 @@
+If element x is in the array, then, if element K-x is also in the array, (x,K-x) constitute a pair, and I increment dist_pair_counter by one. Then, if next element y, is not x, and if (K-y) is in the array, then again, I increment the dist_pair_counter by unity. If the next element z, is not equal to either x or y, and if K-z is also in the array, then again I increment the dist_pair_counter by unity. I pick up an element in the array, I check if it is distinct from the previous elements, and then I check if K minus that element is present in the array, then I upgrade the dist_pair_counter by one or zero. When I reach to the K-x element, and suppose this is the first time this element is encountered, then this element will be considered distinct because it will pass the comparision check with all the previous element, and then will give x as the complement present in the array, thus indicating that a new pair has been found. But I have already counted the pair. 
+
+The distinctness of pairs is defined with respect to the indicies and not the values. The values can be duplicate, by will make distinct pairs if the complement value exists in the array, because they are at different positions. Only the combination of pair is to be counted not the two permutations separately. 
+This is a case of manupulating items with indicies,i.e., indirectly.
+If, for the element at index i, there exists the complement with respect to K of the element at index i, at a index j in the array, I update dist_pair_counter by one. Using index also marks the two numbers to not to be paired again. 
+
+
+The element K divides the array into two sorted halfs, with one having the items, and the other having thier complements. 
+1 2 3 4 4 5 6 7
+How to divide the array using a number K, based on the sum.
+First sort the array. 
+
+
+For the next index i+1, i can again have it paired with j. But, when I reach j, I must skip it. 
+
+If I said non distinct pairs, then I would not skip j and consider the permutations too, giving me 4 pairs in the above case?
+
+I might find an i after j pairable with j. I cannot sort because I have to report the originial indicies in my answer. 
+
+I reach an index, and find
