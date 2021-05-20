@@ -1,0 +1,14 @@
+Stack essay in JS.
+A function call creates a storage. In this storage, items will be indexed. When storing an item, I will put it inside an indexed cell. First, I keep the incoming item in the current index that is always available, and at the same time, create an empty indexed storage for a future item addition. 
+This storage can remove the visible item of the stack. The index is set to the next empty cell. If the storage is empty, i.e., the current index is 0, then I returned undefined as value. In removing, I first decrement the index to point to the visible cell with item, and pick up the visible item. On the next addition of an item, the new item will be added at this very index and then incremented to the same value as it had before removal of the previous item.
+var create_storage=function(){
+  this.memory={};this.index=0;
+  
+  this.stack_up=function(this_item){this.memory[this.index]=this_item; this.index++;}
+  
+  this.stack_down=function(){this.index--; var visible_item=this.memory[this.index]; delete this.memory[this.index]; return visible_item;}
+  
+  
+
+
+}
